@@ -27,16 +27,17 @@ public class PrintNewFile {
         BufferedWriter writOut = null;
         try {
             writOut = new BufferedWriter(new FileWriter(doc2));
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+        
         for (Entry<String, Integer> entry : newmap.entrySet()) {
             String key = entry.getKey();
             Integer value = entry.getValue();
             writOut.write(key + " = " + value + System.getProperty("line.separator"));
+        	}
         }
-
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
         System.out.println("New File create : " + doc2);
         System.out.println("File location: " + doc2.getAbsolutePath());
 
