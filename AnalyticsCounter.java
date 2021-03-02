@@ -1,5 +1,6 @@
 package HemeBiotech;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.Map;
 
 public class AnalyticsCounter {
 	
-	 static File doc = new File ("C://Users/yohan\\Desktop/OPENCLASS/P4_amsellem_yohann/src/HemeBiotech/symptoms.txt");
+		static File doc =new File("symptoms.txt");
 	    static List<String> list = new ArrayList<String>();
 	    static Map<String, Integer> map = new HashMap<String, Integer>();
 
